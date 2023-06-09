@@ -17,7 +17,7 @@ export const App = () => {
     switch (e.target.textContent) {
       case 'good':
         setGood(good + 1);
-        console.log('glod-', good);
+
         break;
       case 'neutral':
         setNeutral(neutral + 1);
