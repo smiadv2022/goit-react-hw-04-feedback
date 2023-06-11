@@ -16,14 +16,14 @@ export const App = () => {
     // console.log('e---', e.target.textContent);
     switch (e.target.textContent) {
       case 'good':
-        setGood(good + 1);
+        setGood(prevstate => prevstate + 1);
 
         break;
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(prevstate => prevstate + 1);
         break;
       case 'bad':
-        setBad(bad + 1);
+        setBad(prevstate => prevstate + 1);
         break;
       default:
         return;
